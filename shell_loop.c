@@ -93,7 +93,6 @@ void find_cmd(info_t *info)
 	char *path = NULL;
 	int i, k;
 	info->path = info->argv[0];
-
 	if (info->linecount_flag == 1)
 	{
 		info->line_count++;
@@ -138,7 +137,6 @@ void fork_cmd(info_t *info)
 {
 	pid_t child_pid;
 	child_pid = fork();
-
 	if (child_pid == -1)
 	{
 		/* TODO: PUT ERROR FUNCTION */
